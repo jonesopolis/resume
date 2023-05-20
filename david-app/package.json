@@ -1,0 +1,30 @@
+{
+  "name": "david-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "watch": "vue-cli-service build --dest wwwroot --no-clean --watch",
+    "sass-dev": "sass --watch --update --style=expanded src/scss:wwwroot/css",
+    "sass-prod": "sass --no-source-map --style=compressed src/scss:wwwroot/css"
+  },
+  "dependencies": {
+    "chance": "^1.1.11",
+    "vue": "^3.2.26",
+    "vue3-word-cloud": "^1.0.4"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "~5.0.0",
+    "bootstrap": "^5.2.3",
+    "sass": "^1.62.1",
+    "sass-loader": "^12.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "_id": "david-app@1.0.0",
+  "readme": "ERROR: No README data found!"
+}
