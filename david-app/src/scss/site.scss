@@ -1,80 +1,134 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
-@import 'https://fonts.googleapis.com/css?family=Exo+2:wght@200';
+@import 'https://fonts.googleapis.com/css2?family=DM+Mono&display=swap';
 
-html {
-	 font-size: 14px;
+body {
+	background-color: #E6E6E6;
+	font-family: 'DM Mono', monospace;
 }
- @media (min-width: 768px) {
-	 html {
-		 font-size: 16px;
+
+.top {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: #111111;
+	height: 425px;
+
+	.david {
+		color: #E6E6E6;
+		font-size: 77px;
+		position: absolute;
+		bottom: -35px;
+		left: calc(50vw - 350px);
+	}
+
+	.rector {
+		color: #E6E6E6;
+		font-size: 77px;
+		position: absolute;
+		bottom: -35px;
+		left: calc(50vw + 122px);
 	}
 }
- .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-	 box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+
+.planet-container-wrapper {
+	position: absolute;
+	top: 150px;
+	width: 100%;
+
+	.planet-container {
+		position: relative;
+		left: 0;
+		right: 0;
+		top: 200px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.planet {
+			position: relative;
+			z-index: 999;
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			background-color: #B8DCA7;
+			border: 2px solid #111111;
+			;
+
+			&::after {
+				content: "";
+				position: absolute;
+				top: 83%;
+				left: 43%;
+				width: 92%;
+				height: 2px;
+				background-color: #111111;
+				transform-origin: top left;
+				transform: translate(-28%, 0) rotate(-45deg);
+			}
+		}
+
+		.moon-1 {
+			position: absolute;
+			top: -14%;
+			right: -17%;
+			width: 45px;
+			height: 45px;
+			border-radius: 50%;
+			background-color: #B8DCA7;
+			border: 2px solid #111111;
+		}
+
+		.moon-2 {
+			position: absolute;
+			top: -25.5%;
+			right: -29%;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			background-color: #B8DCA7;
+			border: 2px solid #111111;
+		}
+
+		.moon-3 {
+			position: absolute;
+			bottom: -20%;
+			left: -20%;
+			width: 25px;
+			height: 25px;
+			border-radius: 50%;
+			background-color: #B8DCA7;
+			border: 2px solid #111111;
+			;
+		}
+
+		.moon-4 {
+			position: absolute;
+			bottom: -28%;
+			left: -29%;
+			width: 15px;
+			height: 15px;
+			border-radius: 50%;
+			background-color: #B8DCA7;
+			border: 2px solid #111111;
+		}
+
+		.horizon-wrapper {
+			position: absolute;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			.horizon {
+				z-index: 9;
+				position: relative;
+				top: 58%;
+				width: 85%;
+				height: 2px;
+				background-color: #111111;
+				transform: translateY(-50%);
+			}
+		}
+	}
 }
- html {
-	 position: relative;
-	 min-height: 100%;
-}
- body {
-	 background-color: #16031d;
-	 color: #fff;
-	 font-family: "Exo 2", sans-serif;
- }
- .home-wrapper {
-	 margin-top: 100px;
-}
- .arrow {
-	 position: relative;
-	 height: 200px;
-	 margin: 30px 0;
-	 display: flex;
-	 align-items: center;
-}
- .arrow::before {
-	 content: "";
-	 position: absolute;
-	 top: 0;
-	 right: 0;
-	 bottom: 10px;
-	 width: 3px;
-	 background-color: #fff;
-}
- .arrow::after {
-	 content: "";
-	 position: absolute;
-	 bottom: 0;
-	 right: -5px;
-	 width: 0;
-	 height: 0;
-	 border-top: 8px solid #fff;
-	 border-right: 8px solid #fff;
-	 border-bottom: 8px solid #fff;
-	 border-left: 8px solid #fff;
-	 transform: translate(10%, 25%) rotate(45deg);
-}
- section {
-	 margin-top: 70px;
-	 padding-top: 70px;
-}
- .lined {
-	 border-top: 2px solid #fff;
-	 position: relative;
-}
- .lined::before, .lined::after {
-	 content: "";
-	 position: absolute;
-	 top: -9px;
-	 height: 16px;
-	 width: 16px;
-	 background-color: #fff;
-}
- .lined::before {
-	 left: 0;
-	 transform: rotate(-45deg);
-}
- .lined::after {
-	 right: 0;
-	 transform: rotate(45deg);
-}
- 

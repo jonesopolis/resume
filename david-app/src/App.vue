@@ -10,11 +10,15 @@
             ['DevOps', 20],
             ['MVC', 20],
 
-            ['Pipelines', 15],
-            ['SOLID / DRY', 15],
-            ['Pipelines', 15],
+            ['Deployments', 15],
+            ['Full Stack', 15],
+            ['Agile', 15],
+            ['Git', 15],
             ['SAAS', 15],
+            ['SEO', 15],
 
+            ['jQuery', 10],
+            ['SQL', 10],
             ['CSS', 10],
             ['SCSS', 10],
             ['LESS', 10],
